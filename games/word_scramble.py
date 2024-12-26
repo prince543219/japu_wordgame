@@ -2,7 +2,7 @@ import random
 import asyncio
 from telethon import events
 
-# List of words for scrambling
+# lsit of words
 wordlist = [
     "python", "telethon", "discord", "scramble", "game", "programming", "developer",
     "apple", "banana", "orange", "cherry", "grape", "melon", "mango", "lemon",
@@ -10,7 +10,7 @@ wordlist = [
     "car", "boat", "phone"
 ]
 
-# Store user games (track active games)
+# track active games
 active_games = {}
 
 # Store player scores
@@ -22,7 +22,7 @@ active_players_in_game = {}
 async def start_word_scramble(event):
     """Start the Word Scramble game."""
     user_id = event.sender_id
-    chat_id = event.chat_id  # Store chat ID for group context
+    chat_id = event.chat_id  #chat ID for group context
 
     # Check if the user is already playing a game
     if user_id in active_games:
