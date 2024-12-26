@@ -3,7 +3,12 @@ import asyncio
 from telethon import events
 
 # List of words for scrambling
-wordlist = ["python", "telethon", "discord", "scramble", "game", "programming", "developer"]
+wordlist = [
+    "python", "telethon", "discord", "scramble", "game", "programming", "developer",
+    "apple", "banana", "orange", "cherry", "grape", "melon", "mango", "lemon",
+    "pear", "kiwi", "table", "chair", "book", "pencil", "paper", "clock", "shoes",
+    "car", "boat", "phone"
+]
 
 # Store user games (track active games)
 active_games = {}
